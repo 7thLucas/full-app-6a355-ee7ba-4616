@@ -1,0 +1,38 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-content { width: 52%; }
+.mode-landscape .sl-visual { width: 48%; }
+.mode-portrait .sl-content { width: 100%; flex: 1; }
+.mode-portrait .sl-visual { width: 100%; height: 40%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full p-10 gap-8">
+    <div class="sl-content flex flex-col justify-between py-2">
+      <div>
+        <div class="mb-8">
+          <span class="bg-indigo-600 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">Game App</span>
+        </div>
+        <h1 class="text-6xl font-black text-slate-900 leading-none mb-6">Classic<br><span class="text-indigo-600">Reimagined.</span></h1>
+        <p class="text-lg text-slate-500 leading-relaxed max-w-xs">
+          Tic Tac Toe with a modern soul — polished visuals, live scoring, and AI challenge. Zero friction, all fun.
+        </p>
+      </div>
+      <div class="flex flex-col gap-5">
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-indigo-50 text-indigo-700 text-sm font-semibold px-4 py-2 rounded-lg border border-indigo-100">2-Player Local</span>
+          <span class="bg-rose-50 text-rose-700 text-sm font-semibold px-4 py-2 rounded-lg border border-rose-100">AI Opponent</span>
+          <span class="bg-slate-100 text-slate-700 text-sm font-semibold px-4 py-2 rounded-lg">Score Tracking</span>
+        </div>
+        <data-attribution />
+      </div>
+    </div>
+    <div class="sl-visual rounded-3xl overflow-hidden flex-shrink-0">
+      <img
+        src="http://localhost:8001/common/image-generation?prompt=tic+tac+toe+board+3x3+grid+minimalist+flat+design+indigo+blue+X+marks+rose+red+O+marks+clean+white+background+modern+game+art"
+        alt="Tic Tac Toe board"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </div>
+</section>
